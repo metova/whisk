@@ -21,13 +21,12 @@ def repos = {
     jcenter()
 }
 
-dependencies {
-    org.gradle.jvm.Classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5' // Add this line
-}
-
 allprojects {
     buildscript {
         repositories repos
+        dependencies {
+            classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5' // Add this line
+        }
     }
     repositories repos
 
