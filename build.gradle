@@ -24,9 +24,6 @@ def repos = {
 allprojects {
     buildscript {
         repositories repos
-        dependencies {
-            classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5' // Add this line
-        }
     }
     repositories repos
 
